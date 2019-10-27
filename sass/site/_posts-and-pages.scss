@@ -122,3 +122,12 @@
     @include make-col(12);
   }
 }
+
+.blog-post {
+  margin: 0;
+  padding: 4rem 0;
+ 
+  &:nth-child(even) {
+    background-color: $gray-100;
+  }
+}
