@@ -7967,7 +7967,7 @@ a.text-white:hover, a.text-white:focus {
 .blog-post {
   margin: 0;
   padding: 4rem 0; }
-  .blog-post:nth-child(even) {
+  .blog-post .blog .blog-post:nth-child(even) {
     background-color: #f8f9fa; }
 
 /*--------------------------------------------------------------
@@ -8002,6 +8002,9 @@ a.text-white:hover, a.text-white:focus {
   margin-bottom: 3rem; }
 
 .blog .site-header {
+  margin-bottom: 0; }
+
+.single .site-header {
   margin-bottom: 0; }
 
 .navbar-brand a {
