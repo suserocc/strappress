@@ -24,8 +24,11 @@ $green: #28a745 !default;
 $teal: #20c997 !default;
 $cyan: #17a2b8 !default;
 
+$custom:#8dd4f0;
+$footer-bg: $gray-600;
+
 $theme-colors: (
-  primary: $blue,
+  primary: $custom,
   secondary: $gray-600,
   success: $green,
   info: $cyan,
@@ -35,6 +38,8 @@ $theme-colors: (
   dark: $gray-800,
   white: $white
 );
+
+
 
 // Creates the colors for editor-color-palette
 @each $color, $value in $theme-colors {

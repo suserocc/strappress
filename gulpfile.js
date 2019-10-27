@@ -36,7 +36,7 @@ var browserSyncWatchFiles = ["./*.min.css", "./js/**/*.min.js", "./**/*.php"];
 // see: https://www.browsersync.io/docs/options/
 var browserSyncOptions = {
   watchTask: true,
-  proxy: "http://localhost:8000"
+  proxy: "http://localhost/wordpress"
 };
 
 // Zip files up
@@ -120,7 +120,7 @@ gulp.task("sass", function() {
 gulp.task("critical", function(cb) {
   critical.generate({
     base: "./",
-    src: "http://localhost:8000/",
+    src: "http://localhost/wordpress",
     dest: "css/home.min.css",
     ignore: ["@font-face"],
     dimensions: [
